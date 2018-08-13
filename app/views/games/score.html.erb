@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Results</h1>
+  <p> The grid was: </p>
+    <ul class="list-inline">
+      <% @grid.each do |letter|%>
+      <li class="list-inline-item mini-card"><%= letter %></li>
+      <% end %>
+    </ul>
+    <p><%= @message %></p>
+  <p><%= link_to 'Play again', '/new' %></p>
+</div>
